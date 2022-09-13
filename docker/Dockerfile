@@ -1,4 +1,4 @@
-FROM python:2.7
+FROM python:3.8
 
 LABEL version="1.0"
 LABEL description="Extending 2.7 image adding a few more pip packages"
@@ -9,4 +9,4 @@ RUN pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org --
 RUN pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org --index-url=https://pypi.org/simple/ pushbullet.py
 
 # I know you are not supposed to do this, it's not very docker-like
-ENTRYPOINT ["tail", "-f", "/dev/null"]
+ENTRYPOINT ["tail", "-f", "/dev/null"
