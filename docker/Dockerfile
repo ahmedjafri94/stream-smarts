@@ -1,4 +1,4 @@
-FROM python:2.7
+FROM python:3.7
 
 LABEL version="1.0"
 LABEL description="Extending 2.7 image adding a few more pip packages"
